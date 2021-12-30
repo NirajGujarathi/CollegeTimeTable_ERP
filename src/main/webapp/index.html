@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="" name="description">
+    <title>Signin AcademicERP</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .btn-xl {
+            padding: 10px 20px;
+            font-size: 20px;
+            border-radius: 10px;
+            width:50%;
+        }
+        .form-control{
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-light ">
+<div class="container" style="text-align: center">
+    <h1 style="color: black; margin-top:20px;"><b><i>WELCOME !!</i></b></h1>
+    <img src="assets/images/background.jpeg"  style=" width:50%; height: 30%; margin-top: 30px;">
+    <form class="form-signin" id="login-validation">
+        <hr class="mb-4"/>
+
+        <h3>IIITB Academia ERP</h3>
+
+        <h2 style="margin-bottom: 20px">Student Course Registration</h2>
+
+
+        <div class="container" style="width: 50%">
+            <div class="row">
+                <div class="col-md-12" style="width: 50%">
+
+                <label class="sr-only" for="roll_number">Roll Number </label>
+                <input autofocus class="form-control" id="roll_number" placeholder="rollNo : MT__ IMT__ MS__" required type="roll_number">
+                </div>
+
+                <div class="col-md-12" style="padding: 18px; width: 500%">
+                <button class="btn btn-xl btn-primary" id="submit-button" type="submit" >
+                    Log in
+                </button>
+                </div>
+                <div class="col-md-12" style="padding: 18px; width: 500%">
+
+                    <button class="btn btn-xl btn-success" disabled id="spinner-button" style="display: none;"  type="submit">
+                        <span aria-hidden="true" class="spinner-border" role="status"></span>
+                        Logging (validating)
+                    </button>
+
+                </div>
+                <div class="alert alert-warning col-md-12" id="login-alert" role="alert" style="display: none; padding: 18px">
+                    Invalid Roll Number!!
+                </div>
+
+
+            </div>
+        </div>
+        <p><a href="dashboard.html"><b>New Student? (click here) </b></a></p>
+
+        <hr class="mb-4"/>
+
+    </form>
+</div>
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/login-validation.js"></script>
+<script src="assets/js/timetable.js"></script>
+</html>

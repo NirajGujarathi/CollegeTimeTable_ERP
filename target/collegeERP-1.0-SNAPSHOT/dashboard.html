@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students - Courses</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container">
+    <div class="py-5 text-center">
+        <h2 style="color:#EC6A5E">Course Registration</h2>
+    </div>
+
+    <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">-- Enter Student Details --</h4>
+        <form class="needs-validation-students" id="student-validation" novalidate>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="first_name">First name</label>
+                    <input class="form-control" id="first_name" placeholder="Niraj" required type="text" value="">
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="last_name">Last name</label>
+                    <input class="form-control" id="last_name" placeholder="Gujarathi" required type="text" value="">
+                    <div class="invalid-feedback">
+                        Valid last name is required.
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="roll_number">roll_number</label>
+                <input class="form-control" id="roll_number" placeholder="rollNo : MT__ IMT__ MS__" required type="roll_number">
+                <div class="invalid-feedback">
+                    Please enter a valid roll_number address for updates.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="courses1">Course 1</label>
+                <select class="custom-select d-block w-100" id="courses1" required>
+                    <option value="">Select your course</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid courses.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="courses2">Course 2</label>
+                <select class="custom-select d-block w-100" id="courses2" required>
+                    <option value="">Select your course</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid course/s.
+                </div>
+            </div>
+
+            <hr class="mb-4">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Continue to register</button>
+            <div class="alert alert-warning" role="alert" id="login-alert" style="display: none; margin-top: 20px">
+                Duplicate roll_number Address!!
+            </div>
+            <div class="alert alert-success" role="alert" id="login-success" style="display: none; margin-top: 20px">
+                Details saved successfully!!
+            </div>
+        </form>
+    </div>
+    <br/>
+    <hr class="mb-4">
+    <p><a href="index.html"><b>Back to Login ..</b></a></p>
+</div>
+<footer class="my-5 pt-5 text-muted text-center text-small">
+</footer>
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/form-validation.js"></script>
+</html>
